@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <script src="Pizza.js"></script>
+    <div class="container">
+        <form action="">
+            <h1 class="Main-heading">Pizza Delivery</h1>
+            <p>Name : <input type="text" name="Name"id="Name" required></p>
+            <p>Address: <textarea name="Address"   rows="6"></textarea></p>
+            <p>Email: <input type="text" name="Email"></p>
+            <p>Pincode: <input type="number"></p>
+            <p>Phone no: <input type="number" name="Phone_no"></p>
+            <h3>Pizza Information</h3>
+            <p>Pizza Type : <select name="Pizza-type" id="Pizza-type">
+                <option value="">---select pizza---</option>
+                <option value="Greek pizza">Greek pizza </option>
+                <option value="Tomato pie">Tomato pie </option>
+                <option value="pizza cheese">pizza cheese</option>
+                <!-- <option value="Hawaiian pizza">Hawaiian pizza-</option>
+                <option value="pepperoni">pepperoni-50</option> -->
+            </select></p>
+            <p>Pizza size: <select name="Pizza-size" id="Pizza-size">
+                <option value="">---- pizza - sizes ------ </option>
+                <option value="Small pizza slice">Small pizza slice</option>
+                <option value="Medium pizza slice">Medium pizza slice</option>
+                <option value="Large pizza slice">Large pizza slice</option>
+            </select></p>
+            <p>Watch here for coupons : <input type="number" id="coupon-no"></p>
+            <button onclick="if(couponMatch()==true){ Generate20()}else if(couponMatch()==false){Generate()}" id="btn">Generate Bill</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="pstyle.css">
+    <script src="https://kit.fontawesome.com/18ffeb2ad7.js" crossorigin="anonymous"></script>
+    <!-- <script src="pscript.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="wrap">
+            <h2 class="logo">Porfo<span>lio</span></h2>
+            <nav>
+                <!-- <img src="images/logo.jpeg" width = 200px height =50px class="logo"> -->
+                <ul class="navlist">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <!-- <li><a href="#">MY services</a></li> -->
+                    <li><a href="#services">MY PROJECTS</a></li>
+                    
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="colsemenu()"></i>
+                </ul>
+           
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+            <div class="header-text">
+               
+                <h1>HI , I'am <br><span>MAYURI </span>BANDU ASWAR <br>From Shirsoli</h1>
+                <p> And I am a Student </p>
+            </div>
+            <div class="images">
+                <img src="profile1.jpeg" class="girl">
+            </div>
+        </div>
+
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="work2.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p>I'm a Student pursuing diploma in Information Technology .<br>I love to study about new Technologies like IOT, AI . <br> I spend lot of my time on learning new skills and exploring coding tasks. <br> Other than this , I love Music .I love to sing songs.
+                    </p>
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                       
+                        <div class="row">
+                            <div class="skill-item">
+                                <h5>Css</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 76%;"></div>
+                                    <div class="skill-percent">76%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item ">
+                                <h5>Javascript</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 80%;"></div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item ">
+                                <h5>Java</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <!-- <ul>
+                            <li><span>FRONT_END DEVELOPER </span><br>Desiging web interfaces</li>
+                            <li><span>Web Development</span> <br>Web Development</li>
+                            <li><span>App Development</span> <br>Building Android /ios apps</li>
+                        </ul> -->
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span id="year">2021-current </span><span id="institute"><br>Government Polytechnic,jalgaon </span> <br>pursuing diploma in Information Technology </li>
+                            <li>-----------------------------</li>
+                            <li><span id="year"> june 2020</span><span id="institute"><br>R.R.Highschool,jalgaon </span> <br>SSC <br>Grade:92% </li>
+                            <li>-----------------------------</li>
+                          
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------My services ----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div class="project">
+                    <img src="pro6.png" alt="">
+                    <div class="layer">
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>portfolio design</h2>
+                    <p>portfolio is an templet where all information about the employee is given in the animated way. </p>
+                    <a href="personal portfolio.html">Learn more</a>
+                </div>
+                </div>
+                <div class="project">
+                    <img src="pro2.png" alt="">
+                    <div class="layer">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Pizza Delivery Form</h2>
+                    <p>Using Html ,Css and Javascript I Develop a form which accept the user information and generates the bill for the customer.  </p>
+                    <a href="pizza form.html">Learn more</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="pro5.png" alt="">
+                    <div class="layer">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Cafe Management System </h2>
+                    <p>This project is developed in Java language </p>
+                    <a href="#">Learn more</a>
+                   </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+
+
+        </div>
+
+    </div>
+    <!-- Contact -->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> aswarmayuri7@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9359984993</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a><!--add icons-->
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   
+
+    <script>
+        // about section js
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+
+     // media query section js
+     
+}
+var side = document.getElementById("sidemenu");
+
+      function openmenu(){
+        side.style.right = "0";
+      }
+
+      function colsemenu(){
+        side.style.right = "-400px";
+      }
+    </script>
+
+    
+      
+
+    
+</body>
+</html>
